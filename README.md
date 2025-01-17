@@ -13,9 +13,6 @@ cd syn-flood
 
 # Install dependencies
 go mod tidy
-
-# Run (requires root privileges)
-sudo go run main.go
 ```
 
 ## Requirements
@@ -27,12 +24,14 @@ sudo go run main.go
 ## Usage
 
 ```bash
+# Run (requires root privileges)
 sudo go run main.go -interface <network-interface> -target <target-ip-or-domain> -port <target-port> -numPackets <number-of-packets>
 ```
 
 Example:
 
 ```bash
+# Run (requires root privileges)
 sudo go run main.go -interface en0 -target example.com -port 80 -numPackets 1000
 ```
 
